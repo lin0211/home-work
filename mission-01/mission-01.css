@@ -1,0 +1,116 @@
+:root {
+  --normal-border: 1px solid #c4c4c4;
+  --blue-600: #0074e9;
+}
+
+body,
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.top {
+  margin: auto;
+  width: 502px;
+  height: 310px;
+  border: var(--normal-border);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.top-start {
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+  color: #4e4e4e;
+}
+
+.img-logo {
+  margin-bottom: 13px;
+}
+
+.top-start .message {
+  width: 200;
+  height: 37;
+}
+
+.bottom-wrapper {
+  margin: auto;
+  width: 502px;
+  display: flow-root;
+}
+
+.bottom {
+  width: 243px;
+  height: 310px;
+  border: var(--normal-border);
+  text-align: center;
+  float: left;
+  padding: 14px;
+  font-size: 18px;
+  color: #555;
+  position: relative;
+}
+
+.bottom-logo {
+  margin-bottom: 3px;
+}
+
+.bottom-message {
+  width: 200px;
+  height: 27px;
+  margin: 7px 0;
+}
+
+.bottom-start {
+  margin-right: 1rem;
+}
+
+.buy-btn {
+  border: none;
+  width: 42px;
+  height: 42px;
+  background: url(./images/button.svg) no-repeat;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.top:hover,
+.bottom:hover {
+  border: 1px solid var(--blue-600);
+}
+
+.buy-btn:hover {
+  width: 112px;
+  height: 42px;
+  background: var(--blue-600);
+}
+
+.buy-btn:hover::after {
+  content: "구매하기 >";
+  color: #fff;
+  word-spacing: 15px;
+}
