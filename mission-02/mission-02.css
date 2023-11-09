@@ -1,0 +1,219 @@
+/* modern reset css */
+@import url(./reset.css);
+/* font */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+:root {
+  --point-color: #24388d;
+}
+
+* {
+  font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif;
+}
+/* header */
+.header-wrapper {
+  background-color: #fefefe;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  position: fixed;
+}
+
+.header {
+  width: 740px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+}
+
+.nav-list a {
+  color: var(--point-color);
+  font-size: 15px;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  font-weight: 700;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* login Page */
+
+.login {
+  background: url(./images/background.png) no-repeat 50% 50%;
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+  text-align: center;
+  color: #fefefe;
+}
+
+.login-title {
+  margin-top: 8.5vh;
+  font-size: 2.25rem;
+  font-weight: 300;
+  letter-spacing: -0.72px;
+}
+
+.login-welcome {
+  margin-top: 1.5rem;
+}
+
+.welcome-en {
+  font-size: 1.125rem;
+  letter-spacing: -0.36px;
+}
+
+.welcome-ko {
+  margin-top: 0.56rem;
+  letter-spacing: -0.24px;
+}
+
+.form {
+  margin: 8.5vh auto 0 auto;
+  width: 540px;
+  display: grid;
+  grid-template-rows: 70px 70px 30px;
+}
+
+.email,
+.password,
+.checkbox {
+  display: block;
+}
+
+.email,
+.password {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #f5f5f57d;
+  margin-bottom: 11px;
+}
+
+.email-label,
+.password-label {
+  display: none;
+}
+
+.input-line {
+  width: 100%;
+  height: 70px;
+  background-color: transparent;
+  border: none;
+  padding-block: 0;
+  padding-inline: 20px 8px;
+  letter-spacing: -0.32px;
+  color: #f5f5f5;
+}
+
+.input-email,
+.input-password {
+  border: 1px solid pink;
+}
+
+.input-password::after {
+  content: "패스워드";
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+
+  /* animation: MovingLetter 2s ease-in-out forwards; */
+}
+
+/* animation */
+@keyframes MovingLetter {
+  0% {
+    font-size: 18px;
+  }
+  100% {
+    font-size: 13px;
+  }
+}
+
+.checkbox {
+  display: flex;
+}
+
+.checkbox input {
+  width: 16px;
+  height: 16px;
+}
+.checkbox input:checked {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+}
+
+/* .checkbox input:active::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(./images/checked.svg) no-repeat;
+} */
+
+.signin-signup {
+  margin-top: 12.14vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.signin,
+.signup {
+  border-radius: 8px;
+  border: 1px solid #f5f5f5;
+  background: transparent;
+  color: #f5f5f5;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  width: 260px;
+  height: 48px;
+  line-height: 46px;
+}
+
+/* media query  */
+@media (max-width: 600px) {
+  body {
+    border: 5px solid purple;
+  }
+  .header {
+    width: 100vh;
+  }
+  .logo {
+    margin-left: 18px;
+  }
+  .nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(./images/hamburger.svg) no-repeat 50% 50%;
+  }
+  .form,
+  .signin,
+  .signup {
+    width: 311px;
+  }
+  .signin-signup {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+  }
+}
