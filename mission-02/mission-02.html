@@ -7,6 +7,7 @@
     <meta name="author" content="SIRLIN JEONG" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./mission-02.css" />
+    <script src="./mission-02.js"></script>
     <title>Mission-02</title>
   </head>
   <body>
@@ -35,28 +36,46 @@
           <p class="welcome-eg">Welcome, Ediya Coffee</p>
           <p class="welcome-ko">이디야커피에 오신 것을 환영합니다.</p>
         </div>
-        <form action="" method="get" class="form">
+        <form action="/" method="get" class="form">
           <div class="email">
-            <label for="input-email" class="email-label">이메일</label>
             <input
               type="email"
               name="input-email"
               id="input-email"
-              class="input-line input-email"
+              class="input-style input-email"
+              required
+              onkeyup="emailCheck(this.value)"
             />
+            <label for="input-email" class="label-style email-label"
+              >이메일</label
+            >
+            <span id="email-invalid" class="email-invalid"
+              >이메일 입력 방법이 잘못되었습니다.(예:user@domain.io)</span
+            >
           </div>
           <div class="password">
-            <label for="input-password" class="password-label">패스워드</label>
             <input
               type="password"
               name="input-password"
               id="input-password"
-              class="input-line input-password"
+              class="input-style input-password"
+              required
+            />
+            <label for="input-password" class="label-style password-label"
+              >패스워드</label
+            >
+            <input
+              type="checkbox"
+              class="show-pwd"
+              id="show-pwd"
+              onclick="showPwd()"
             />
           </div>
           <div class="checkbox">
             <input type="checkbox" name="input-checkbox" id="input-checkbox" />
-            <label for="input-checkbox">이메일 저장</label>
+            <label class="label-checkbox" for="input-checkbox"
+              >이메일 저장</label
+            >
           </div>
           <div class="signin-signup">
             <button type="submit" class="signin">로그인</button>
