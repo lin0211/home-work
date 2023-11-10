@@ -19,8 +19,9 @@
 - JavaScript
 
 ## 미리보기
-
-<img src="https://github.com/lin0211/home-work/assets/139965934/92e85df9-fc05-4fdc-b1cd-f3c8d55d5638" alt="preview website">
+<video controls width="250">
+  <source src="https://github.com/lin0211/home-work/assets/139965934/92e85df9-fc05-4fdc-b1cd-f3c8d55d5638" type="video/mp4" />
+</video>
 
 ## 상세 정보
 
