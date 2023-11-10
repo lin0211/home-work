@@ -18,10 +18,6 @@
 - CSS
 - JavaScript
 
-## 미리보기
-
-<img src="https://github.com/lin0211/home-work/assets/139965934/92e85df9-fc05-4fdc-b1cd-f3c8d55d5638" alt="preview website">
-
 ## 상세 정보
 
 **1. HTML 설계 배치**
