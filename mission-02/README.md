@@ -91,3 +91,7 @@
 - **비밀번호 보기/숨기기**
 
   비밀번호 보기/숨기기: checkbox의 클릭에 따라 type을 바꾸어 text가 보이게 또는 숨기게 설정.
+
+## 완성 모습
+
+<img src="/mission-02/images/done.gif" width="400" height="350"/>
