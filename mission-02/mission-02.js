@@ -16,10 +16,10 @@ function showPwd() {
   if (pwd.type === "password") {
     pwd.type = "text";
     document.getElementById("show-pwd").style.backgroundImage =
-      "url(./images/아이콘/눈1.svg)";
+      "url(./images/icon/eye1.svg)";
   } else {
     pwd.type = "password";
     document.getElementById("show-pwd").style.backgroundImage =
-      "url(./images/아이콘/눈2.svg)";
+      "url(./images/icon/eye2.svg)";
   }
 }

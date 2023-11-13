@@ -139,15 +139,13 @@
   appearance: none;
   width: 16px;
   height: 16px;
-  background: url(./images/아이콘/체크박스/uncheck.svg) no-repeat 0 0 / 16px
-    16px;
+  background: url(./images/icon/checkbox/uncheck.svg) no-repeat 0 0 / 16px 16px;
 }
 .checkbox input:checked {
   appearance: none;
   width: 16px;
   height: 16px;
-  background: url(./images/아이콘/체크박스/checked.svg) no-repeat 0 0 / 16px
-    16px;
+  background: url(./images/icon/checkbox/checked.svg) no-repeat 0 0 / 16px 16px;
 }
 
 .label-checkbox {
@@ -163,7 +161,7 @@
 }
 
 .signin,
-.signup {
+.signup-a {
   border-radius: 8px;
   border: 1px solid #f5f5f5;
   background: transparent;
@@ -174,12 +172,22 @@
   width: 260px;
   height: 48px;
   line-height: 46px;
+  cursor: pointer;
+  background: url(./images/arrow-white.svg) no-repeat top 50% right 14px;
+}
+
+.signin:hover,
+.signin:focus,
+.signup-a:hover,
+.signup-a:focus {
+  color: var(--point-color);
+  background: #f5f5f5 url(./images/arrow.svg) no-repeat top 50% right 14px;
 }
 
 /* 동적 클래스 추가 */
 /* email valid */
 .is--valid.input-email {
-  background: url(./images/아이콘/체크마크.svg) no-repeat bottom 8px right 8px/ 16px
+  background: url(./images/icon/checkmark.svg) no-repeat bottom 8px right 8px/ 16px
     16px;
 }
 
@@ -190,12 +198,12 @@
 
 /* email invalid - warning */
 .input-email-invalid {
-  background: url(./images/아이콘/경고.svg) no-repeat bottom 12px right 8px/ 16px
+  background: url(./images/icon/warning.svg) no-repeat bottom 12px right 8px/ 16px
     16px;
 }
 /* password invalid - warning */
 .input-password-invalid {
-  background: url(./images/아이콘/경고.svg) no-repeat bottom 12px right 34px/ 16px
+  background: url(./images/icon/warning.svg) no-repeat bottom 12px right 34px/ 16px
     16px;
 }
 
@@ -210,13 +218,13 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 16px 16px;
-  background-image: url(./images/아이콘/눈2.svg);
+  background-image: url(./images/icon/eye2.svg);
 }
 
 /* media query  */
 @media (max-width: 600px) {
   .header {
-    width: 100vh;
+    width: 100%;
   }
   .logo {
     margin-left: 18px;
