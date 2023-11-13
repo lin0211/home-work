@@ -10,6 +10,12 @@
 * {
   font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif;
 }
+
+.button-reset {
+  border: none;
+  background: transparent;
+}
+
 /* header */
 .header-wrapper {
   background-color: #fefefe;
@@ -184,6 +190,10 @@
   background: #f5f5f5 url(./images/arrow.svg) no-repeat top 50% right 14px;
 }
 
+.signup {
+  width: 100%;
+}
+
 /* 동적 클래스 추가 */
 /* email valid */
 .is--valid.input-email {
@@ -241,7 +251,7 @@
 
   .form,
   .signin,
-  .signup {
+  .signup-a {
     width: 311px;
   }
 
