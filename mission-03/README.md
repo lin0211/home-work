@@ -93,7 +93,7 @@
 
 ---
 
-<img src="./images/md-grid-mobile.png" width="150" height=""/> <img src="./images/md-grid-desktop.png" width="300" height=""/>
+<img src="./images/md-grid-mobile.png" width="200" height=""/> <img src="./images/md-grid-desktop.png" width="500" height=""/>
 
 **2.3 footer - grid**
 
